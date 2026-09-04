@@ -1,0 +1,226 @@
+{
+  "animation": "/Users/sunyidan/Developer/InternDataEngine/blender_demo/output/p2/pour_color_reaction_p2.mp4",
+  "blend": "/Users/sunyidan/Developer/InternDataEngine/blender_demo/output/p2/pour_color_reaction_p2.blend",
+  "presentation": {
+    "boundary_checks": [
+      {
+        "camera": "wide",
+        "frame": 1,
+        "stage": "establish",
+        "visible_objects": 4
+      },
+      {
+        "camera": "wide",
+        "frame": 45,
+        "stage": "establish",
+        "visible_objects": 4
+      },
+      {
+        "camera": "wide",
+        "frame": 46,
+        "stage": "approach_grasp",
+        "visible_objects": 4
+      },
+      {
+        "camera": "wide",
+        "frame": 135,
+        "stage": "approach_grasp",
+        "visible_objects": 4
+      },
+      {
+        "camera": "wide",
+        "frame": 136,
+        "stage": "lift_transport",
+        "visible_objects": 4
+      },
+      {
+        "camera": "wide",
+        "frame": 225,
+        "stage": "lift_transport",
+        "visible_objects": 4
+      },
+      {
+        "camera": "wide",
+        "frame": 226,
+        "stage": "pouring",
+        "visible_objects": 4
+      },
+      {
+        "camera": "wide",
+        "frame": 240,
+        "stage": "pouring",
+        "visible_objects": 4
+      },
+      {
+        "camera": "reaction_closeup",
+        "frame": 241,
+        "stage": "pouring",
+        "visible_objects": 4
+      },
+      {
+        "camera": "reaction_closeup",
+        "frame": 275,
+        "stage": "pouring",
+        "visible_objects": 4
+      },
+      {
+        "camera": "reaction_closeup",
+        "frame": 276,
+        "stage": "color_reaction",
+        "visible_objects": 4
+      },
+      {
+        "camera": "reaction_closeup",
+        "frame": 330,
+        "stage": "color_reaction",
+        "visible_objects": 4
+      },
+      {
+        "camera": "reaction_closeup",
+        "frame": 331,
+        "stage": "recovery",
+        "visible_objects": 4
+      },
+      {
+        "camera": "reaction_closeup",
+        "frame": 345,
+        "stage": "recovery",
+        "visible_objects": 4
+      },
+      {
+        "camera": "wide",
+        "frame": 346,
+        "stage": "recovery",
+        "visible_objects": 4
+      },
+      {
+        "camera": "wide",
+        "frame": 405,
+        "stage": "recovery",
+        "visible_objects": 4
+      },
+      {
+        "camera": "wide",
+        "frame": 406,
+        "stage": "result",
+        "visible_objects": 4
+      },
+      {
+        "camera": "wide",
+        "frame": 450,
+        "stage": "result",
+        "visible_objects": 4
+      }
+    ],
+    "camera_ranges": {
+      "reaction_closeup": [
+        [
+          241,
+          345
+        ]
+      ],
+      "wide": [
+        [
+          1,
+          240
+        ],
+        [
+          346,
+          450
+        ]
+      ]
+    },
+    "cameras": [
+      "reaction_closeup",
+      "wide"
+    ],
+    "objects": 56,
+    "root": "PresentationRoot",
+    "stages": 7
+  },
+  "validation": {
+    "camera": "Camera",
+    "fps": 30,
+    "frame_range": [
+      1,
+      450
+    ],
+    "materials": 10,
+    "objects": 87,
+    "reaction_closeup": {
+      "active_range": [
+        241,
+        345
+      ],
+      "camera": "ReactionCloseupCamera",
+      "cuts": [
+        {
+          "camera": "Camera",
+          "frame": 1
+        },
+        {
+          "camera": "Camera",
+          "frame": 240
+        },
+        {
+          "camera": "ReactionCloseupCamera",
+          "frame": 241
+        },
+        {
+          "camera": "ReactionCloseupCamera",
+          "frame": 345
+        },
+        {
+          "camera": "Camera",
+          "frame": 346
+        }
+      ]
+    },
+    "resolution": [
+      1920,
+      1080
+    ],
+    "samples": {
+      "final": {
+        "frame": 450.0,
+        "grasp_distance": 0.0,
+        "reaction_factor": 1.0,
+        "source_height": 0.006000000052154064,
+        "stream_radius": 0.0,
+        "target_height": 0.054999999701976776
+      },
+      "grasped": {
+        "frame": 135.0,
+        "grasp_distance": 0.0,
+        "reaction_factor": 0.0,
+        "source_height": 0.09000000357627869,
+        "stream_radius": 0.0,
+        "target_height": 0.029999999329447746
+      },
+      "initial": {
+        "frame": 1.0,
+        "grasp_distance": 0.1854723755699851,
+        "reaction_factor": 0.0,
+        "source_height": 0.09000000357627869,
+        "stream_radius": 0.0,
+        "target_height": 0.029999999329447746
+      },
+      "pour": {
+        "frame": 276.0,
+        "grasp_distance": 0.0,
+        "reaction_factor": 0.0,
+        "source_height": 0.04025314003229141,
+        "stream_radius": 0.00419999985024333,
+        "target_height": 0.0448056124150753
+      },
+      "reaction": {
+        "frame": 330.0,
+        "grasp_distance": 0.0,
+        "reaction_factor": 1.0,
+        "source_height": 0.006000000052154064,
+        "stream_radius": 0.0,
+        "target_height": 0.054999999701976776
+      }
+    }
+  }
+}

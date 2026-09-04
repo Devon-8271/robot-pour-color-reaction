@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "project": {
+    "name": "pour_color_reaction",
+    "description": "Blender visual prototype: pour yellow liquid from a test tube into red liquid in a beaker and transition the mixture to purple.",
+    "units": "METERS"
+  },
+  "objects": {
+    "scene_root": "SceneRoot",
+    "table": "Table",
+    "robot_root": "RobotRoot",
+    "robot_base": "Base",
+    "gripper_target": "GripperTarget",
+    "test_tube_root": "TestTubeRoot",
+    "test_tube_glass": "TestTubeGlass",
+    "source_liquid": "SourceLiquidYellow",
+    "beaker_root": "BeakerRoot",
+    "beaker_glass": "BeakerGlass",
+    "target_liquid": "TargetLiquid",
+    "pour_stream": "PourStream",
+    "camera": "Camera",
+    "lights_root": "Lights"
+  },
+  "animation": {
+    "fps": 30,
+    "start_frame": 1,
+    "end_frame": 450,
+    "establish_start_frame": 1,
+    "establish_end_frame": 45,
+    "approach_start_frame": 46,
+    "approach_end_frame": 105,
+    "grasp_start_frame": 106,
+    "grasp_end_frame": 135,
+    "transport_start_frame": 136,
+    "transport_end_frame": 225,
+    "pour_start_frame": 226,
+    "pour_end_frame": 315,
+    "reaction_start_frame": 276,
+    "reaction_end_frame": 330,
+    "recover_start_frame": 316,
+    "recover_end_frame": 405,
+    "final_start_frame": 406,
+    "final_end_frame": 450
+  },
+  "colors": {
+    "source_yellow": [1.0, 0.55, 0.0, 1.0],
+    "target_red": [0.8, 0.003, 0.003, 1.0],
+    "reacted_purple": [0.28, 0.002, 0.65, 1.0],
+    "glass_tint": [0.2, 0.55, 1.0, 0.1],
+    "background": [0.035, 0.045, 0.065, 1.0]
+  },
+  "test_tube": {
+    "inner_radius": 0.011,
+    "wall_thickness": 0.0015,
+    "height": 0.14,
+    "liquid_height": 0.09,
+    "location": [-0.22, 0.0, 0.16]
+  },
+  "beaker": {
+    "inner_radius": 0.04,
+    "wall_thickness": 0.002,
+    "height": 0.1,
+    "initial_liquid_height": 0.03,
+    "final_liquid_height": 0.055,
+    "location": [0.12, 0.0, 0.05]
+  },
+  "render": {
+    "engine": "BLENDER_EEVEE",
+    "resolution_x": 1920,
+    "resolution_y": 1080,
+    "resolution_percentage": 100,
+    "output_format": "FFMPEG",
+    "image_format": "PNG",
+    "container": "MPEG4",
+    "video_codec": "H264"
+  }
+}

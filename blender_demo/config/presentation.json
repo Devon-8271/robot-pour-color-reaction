@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "root_name": "PresentationRoot",
+  "style": {
+    "depth": 0.3,
+    "text_color": [0.96, 0.98, 1.0, 1.0],
+    "panel_color": [0.012, 0.025, 0.065, 0.72],
+    "panel_padding": [0.005, 0.0035],
+    "panel_depth_offset": 0.0015,
+    "label": {
+      "position": [0.097, 0.051],
+      "size": 0.006,
+      "align_x": "RIGHT"
+    },
+    "caption": {
+      "position": [-0.052, -0.052],
+      "size": 0.005,
+      "align_x": "CENTER"
+    }
+  },
+  "stages": [
+    {
+      "id": "establish",
+      "start_frame": 1,
+      "end_frame": 45,
+      "label": "POURING & COLOR REACTION",
+      "caption": "Yellow reagent + red solution"
+    },
+    {
+      "id": "approach_grasp",
+      "start_frame": 46,
+      "end_frame": 135,
+      "label": "APPROACH & GRASP",
+      "caption": "Secure the test tube"
+    },
+    {
+      "id": "lift_transport",
+      "start_frame": 136,
+      "end_frame": 225,
+      "label": "LIFT & TRANSPORT",
+      "caption": "Move above the beaker"
+    },
+    {
+      "id": "pouring",
+      "start_frame": 226,
+      "end_frame": 275,
+      "label": "POURING",
+      "caption": "Yellow reagent enters the beaker"
+    },
+    {
+      "id": "color_reaction",
+      "start_frame": 276,
+      "end_frame": 330,
+      "label": "COLOR REACTION",
+      "caption": "Red solution transitions to purple"
+    },
+    {
+      "id": "recovery",
+      "start_frame": 331,
+      "end_frame": 405,
+      "label": "RECOVERY",
+      "caption": "Stop pouring and return upright"
+    },
+    {
+      "id": "result",
+      "start_frame": 406,
+      "end_frame": 450,
+      "label": "RESULT",
+      "caption": "Reaction complete: purple mixture"
+    }
+  ]
+}

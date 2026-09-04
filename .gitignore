@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.blend1
+*.blend2
+*.log
+.venv/
+
+# Keep only the verified final delivery under output/p2.
+blender_demo/output/*
+!blender_demo/output/p2/
+!blender_demo/output/p2/**
